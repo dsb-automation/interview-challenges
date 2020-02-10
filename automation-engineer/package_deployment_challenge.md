@@ -33,7 +33,7 @@ the NuGet package is sent up to a web app called
 web app uses the corresponding NuGet package to run a process.
 
 The simplest way to do this "deployment" (`xaml` files -> built NuGet packages
--> pushed to Orchestrator) is what amounts to basically a [right-click
+-> pushed to Orchestrator) amounts to basically a [right-click
 publish](https://damianbrady.com.au/2018/02/01/friends-dont-let-friends-right-click-publish/)
 from UiPath Studio, where the `xaml` files are compiled, packaged, and pushed to
 the Orchestrator web app that the user's machine is connected to.
