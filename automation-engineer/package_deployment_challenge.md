@@ -1,5 +1,9 @@
 # Automation Engineer Challenge
 
+**Expected task time:** 1-2 hours
+
+## Intro
+
 As can be inferred from our [RPA developer
 challenge](../rpa-developer/ChallengeInstructions.md), we use Robotics Process
 Automation (RPA) as a part of our automation toolchain at DSB. For the most
@@ -18,6 +22,8 @@ automation engineer that faces many tasks related to building the guardrails for
 our developers. Whether it is an internal tool or a specific infrastructure, the
 developers will use it and just care that it "works"--they don't care how.
 
+## UiPath Robot Code Deployment
+
 [UiPath Studio](https://docs.uipath.com/studio) (the program used to coding
 robotics workflows) "outputs" `xaml` that are then packaged into NuGet packages.
 The packaging from `xaml` files to NuGet packages is done by an executable that
@@ -30,7 +36,9 @@ The simplest way to do this "deployment" (`xaml` files -> built NuGet packages
 -> pushed to Orchestrator) is what amounts to basically a [right-click
 publish](https://damianbrady.com.au/2018/02/01/friends-dont-let-friends-right-click-publish/)
 from UiPath Studio, where the `xaml` files are compiled, packaged, and pushed to
-Orchestrator, wherever it exists.
+the Orchestrator web app that the user's machine is connected to.
+
+## Your Challenge
 
 This is where the challenge enters. Imagine that you have been employed at DSB.
 You have learned that the robot developers are developing their code, and when
@@ -45,16 +53,22 @@ experience with it.
 Your challenge question is this:
 
 ```
-Using a more modern day DevOps approach, how would you go about improving this process?
+Using a more modern day DevOps approach, how would you go about improving the process of deploying the robot code NuGet packages to Orchestrator?
 ```
+
+## Provided Toolkit
 
 You can assume you have the following at your disposal to use in the deployment
 process redesign:
 
-1. You have a platform to save code in version control
-2. You have a standard CI/CD platform to run builds and deployments
-3. You have an agent in from the CI/CD platform with the UiPath executable that
+1. You have a stable UiPath Orchestrator where the robot code packages need to
+   be pushed to, at some point in the CI/CD process
+2. You have a platform to save code in version control
+3. You have a standard CI/CD platform to run builds and deployments
+4. You have an agent in from the CI/CD platform with the UiPath executable that
    can build NuGet packages from `xaml` files installed
+
+## Required Tasks
 
 Your tasks include:
 
@@ -65,6 +79,16 @@ Your tasks include:
    you would propose to the team.
 3. Describe how you would build buy-in from the RPA developers for you process
    and how you would account for varying levels in modern development standards.
-4. Explain how you might design a process for testing the robot code NuGet
+
+## Bonus
+
+If you were able to complete the first tasks in the alloted time, you can begin
+working on these bonus questions:
+
+1. How would you begin the process of code review for the robot code to be used
+   in RPA processes?
+2. How would you ensure a short build time on the build and deployment of the
+   robot code?
+3. Explain how you might design a process for testing the robot code NuGet
    packages and electing packages between different environments based on their
    (non)success.
