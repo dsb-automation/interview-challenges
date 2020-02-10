@@ -53,7 +53,7 @@ experience with it.
 Your challenge question is this:
 
 ```
-Using a more modern day DevOps approach, how would you go about improving the process of deploying the robot code NuGet packages to Orchestrator?
+Using a modern DevOps approach, how would you improve the process of deploying the robot code NuGet packages to Orchestrator?
 ```
 
 ## Provided Toolkit
@@ -72,12 +72,12 @@ process redesign:
 
 Your tasks include:
 
-1. Write a list of initial questions/thoughts that you have about the current
+- [ ] Write a list of initial questions/thoughts that you have about the current
    process that you would inquire the developers and any other team members
    about before embarking on the process.
-2. Prepare a 5-10 minute run-through of the new deployment process overview that
+- [ ] Prepare a 5-10 minute run-through of the new deployment process overview that
    you would propose to the team.
-3. Describe how you would build buy-in from the RPA developers for you process
+- [ ] Describe how you would build buy-in from the RPA developers for you process
    and how you would account for varying levels in modern development standards.
 
 ## Bonus
@@ -85,10 +85,10 @@ Your tasks include:
 If you were able to complete the first tasks in the alloted time, you can begin
 working on these bonus questions:
 
-1. How would you begin the process of code review for the robot code to be used
+- [ ] How would you begin the process of code review for the robot code to be used
    in RPA processes?
-2. How would you ensure a short build time on the build and deployment of the
+- [ ] How would you ensure a short build time on the build and deployment of the
    robot code?
-3. Explain how you might design a process for testing the robot code NuGet
+- [ ] Explain how you might design a process for testing the robot code NuGet
    packages and electing packages between different environments based on their
    (non)success.
