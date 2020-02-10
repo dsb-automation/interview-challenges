@@ -8,7 +8,7 @@ Bøgholt Max Petersen](mailto:kibm@dsb.dk).
 
 At this moment, we have hired for two main positions in DSB:
 
-1. RPA Developer
-2. Automation Engineer
+1. [RPA Developer](./rpa-developer/ChallengeInstructions.md)
+2. [Automation Engineer](./automation-engineer/package_deployment_challenge.md)
 
 The correspondingly named challenges apply to the positions we have hired for.
